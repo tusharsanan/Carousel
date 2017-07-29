@@ -1,0 +1,54 @@
+* { 
+	margin: 0; 
+	padding: 0; 
+	text-decoration: none;  
+	outline: none;
+	font-weight:inherit; 
+	font-style:inherit;
+	border:none; 
+	box-sizing: border-box;
+}
+
+input {
+	padding: 3px 10px;
+	border: 1px solid #c2deea;
+	border-radius: 3px;
+}
+
+h1 {
+	color: $base-color;
+	padding-bottom: 0.5em;
+}
+
+a {
+	color: $base-color;
+}
+
+img {
+	max-width: 100%;
+}
+
+body {
+	@extend %center-align;
+	font-family:"NoaLight","Lucida Grande","Lucida Sans Unicode","Helvetica Neue","Helvetica",verdana,arial,sans-serif;
+	color:$primary-font-color;
+}
+
+img {
+    width: $full-width;
+    height: auto;
+}
+
+.o-container {
+	max-width: $max-width;
+	@extend %center-align;
+	padding: $horizontal-medium-gutter;
+	@media screen and (max-width:$break-small) {
+		padding: 0;
+		max-width: $max-width-reset;
+	}
+}
+
+ul,li {
+	@extend %no-decoration;
+}

@@ -1,0 +1,8 @@
+<app-header></app-header>
+<app-carousel [interval]="NextPhotoInterval" [noWrap]="noLoopSlides">
+  <app-plan-and-book></app-plan-and-book>
+  <app-slider *ngFor="let slidez of slides; let index=index"
+          [active]="slidez.active">
+      <img [src]="slidez.image" style="margin:auto;">
+  </app-slider>
+</app-carousel>

@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  outline: none;
+  font-weight: inherit;
+  font-style: inherit;
+  border: none;
+  box-sizing: border-box; }
+
+input {
+  padding: 3px 10px;
+  border: 1px solid #c2deea;
+  border-radius: 3px; }
+
+h1 {
+  color: #00a1de;
+  padding-bottom: 0.5em; }
+
+a {
+  color: #00a1de; }
+
+img {
+  max-width: 100%; }
+
+body {
+  font-family: "NoaLight","Lucida Grande","Lucida Sans Unicode","Helvetica Neue","Helvetica",verdana,arial,sans-serif;
+  color: #003145; }
+
+img {
+  width: 100%;
+  height: auto; }
+
+.o-container {
+  max-width: 95%;
+  padding: 0 20px; }
+  @media screen and (max-width: 768px) {
+    .o-container {
+      padding: 0;
+      max-width: 100%; } }
+
+body, .o-container {
+  margin: 0 auto; }
+
+.c-header__wrapper .c-header__firstRow .c-header_firstRowLinks ul li, .c-header__wrapper .c-header__nav .t-header--links ul li {
+  float: left;
+  margin-right: 15px; }
+
+ul, li {
+  text-decoration: none;
+  list-style-type: none; }
+
+header {
+  z-index: 99;
+  width: 100%;
+  background: white; }
+  header .t-header--closeLink {
+    padding: 10px;
+    background: white;
+    display: inline-block;
+    width: 4%;
+    position: absolute;
+    left: 4%; }
+    @media screen and (max-width: 768px) {
+      header .t-header--closeLink {
+        display: none; } }
+    header .t-header--closeLink img {
+      width: 45px;
+      height: 45px; }
+  @media screen and (max-width: 768px) {
+    header {
+      top: 53px; } }
+
+.c-header__wrapper {
+  overflow: hidden;
+  padding: 20px; }
+  @media screen and (max-width: 768px) {
+    .c-header__wrapper {
+      border-bottom: #00a1de;
+      border-top: #00a1de; } }
+  .c-header__wrapper .c-header__firstRow {
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-bottom: #ccecf8;
+    overflow: hidden; }
+    .c-header__wrapper .c-header__firstRow .t-header__logos {
+      float: left; }
+      @media screen and (max-width: 570px) {
+        .c-header__wrapper .c-header__firstRow .t-header__logos {
+          float: none; } }
+      .c-header__wrapper .c-header__firstRow .t-header__logos .t-header--logo {
+        display: inline-block;
+        margin-right: 5px; }
+        .c-header__wrapper .c-header__firstRow .t-header__logos .t-header--logo img {
+          width: 72px;
+          height: 50px; }
+      .c-header__wrapper .c-header__firstRow .t-header__logos .t-header--text {
+        display: inline-block;
+        position: relative;
+        bottom: 7px; }
+        .c-header__wrapper .c-header__firstRow .t-header__logos .t-header--text img {
+          width: 121px;
+          height: 15px; }
+      .c-header__wrapper .c-header__firstRow .t-header__logos .t-header--teamText {
+        display: inline-block;
+        position: relative;
+        bottom: 7px; }
+        .c-header__wrapper .c-header__firstRow .t-header__logos .t-header--teamText img {
+          width: 31px;
+          height: 31px; }
+    .c-header__wrapper .c-header__firstRow .c-header_firstRowLinks {
+      float: right; }
+      @media screen and (max-width: 570px) {
+        .c-header__wrapper .c-header__firstRow .c-header_firstRowLinks {
+          float: left; } }
+      .c-header__wrapper .c-header__firstRow .c-header_firstRowLinks ul {
+        overflow: hidden;
+        margin-top: 10px; }
+        .c-header__wrapper .c-header__firstRow .c-header_firstRowLinks ul li {
+          border-right: 1px solid #00a1de;
+          padding-right: 15px;
+          display: inline-block;
+          line-height: 120%; }
+          .c-header__wrapper .c-header__firstRow .c-header_firstRowLinks ul li a {
+            font-size: 0.875em; }
+          .c-header__wrapper .c-header__firstRow .c-header_firstRowLinks ul li:last-child {
+            border-right: none;
+            margin-right: 0;
+            padding-right: 0; }
+          .c-header__wrapper .c-header__firstRow .c-header_firstRowLinks ul li:first-child {
+            padding-right: 10px; }
+          .c-header__wrapper .c-header__firstRow .c-header_firstRowLinks ul li ul {
+            margin-top: 0; }
+            .c-header__wrapper .c-header__firstRow .c-header_firstRowLinks ul li ul li {
+              padding-right: 0;
+              border-right: 0;
+              margin-right: 5px; }
+              .c-header__wrapper .c-header__firstRow .c-header_firstRowLinks ul li ul li:first-child {
+                padding-right: 0; }
+  .c-header__wrapper .c-header__nav {
+    overflow: hidden; }
+    .c-header__wrapper .c-header__nav .t-header--links {
+      overflow: hidden;
+      float: left; }
+      .c-header__wrapper .c-header__nav .t-header--links ul li {
+        padding: 5px; }
+        .c-header__wrapper .c-header__nav .t-header--links ul li a {
+          font-size: 0.875em; }
+  .c-header__wrapper .u-search__bar {
+    overflow: hidden;
+    position: relative;
+    float: right; }
+    @media screen and (max-width: 768px) {
+      .c-header__wrapper .u-search__bar {
+        float: left; } }
+    .c-header__wrapper .u-search__bar input {
+      color: #999; }
+    .c-header__wrapper .u-search__bar img {
+      right: 5px;
+      position: absolute;
+      top: 5px; }
+
+.o-plan-and-book-module {
+  border: 1px solid #EFEFEF;
+  width: 440px;
+  position: absolute;
+  top: 25%;
+  z-index: 1;
+  background: white;
+  left: 5%; }
+  @media screen and (max-width: 768px) {
+    .o-plan-and-book-module {
+      display: none; } }
+  .o-plan-and-book-module .c-plan-and-book-module__inner {
+    padding: 15px;
+    overflow: hidden; }
+    .o-plan-and-book-module .c-plan-and-book-module__inner .c-plan-and-book__selections label {
+      width: 85%;
+      margin-right: 30px;
+      margin-bottom: 11px;
+      display: inline-block;
+      white-space: nowrap; }
+      .o-plan-and-book-module .c-plan-and-book-module__inner .c-plan-and-book__selections label input {
+        background-color: #FFF;
+        font-weight: normal;
+        background-repeat: no-repeat;
+        width: 85%;
+        display: inline-block;
+        background-image: url("./assets/images/small-flight.gif");
+        background-position: 8px center;
+        padding: 5px 5px 5px 40px; }
+        .o-plan-and-book-module .c-plan-and-book-module__inner .c-plan-and-book__selections label input.no-image {
+          background-image: none;
+          padding-left: 5px; }
+      .o-plan-and-book-module .c-plan-and-book-module__inner .c-plan-and-book__selections label span {
+        display: inline-block;
+        width: 30%;
+        padding-right: 10px;
+        margin-top: 10px;
+        line-height: 100%;
+        font-weight: bold;
+        color: #005b82; }
+    .o-plan-and-book-module .c-plan-and-book-module__inner .c-search-module .t-search--button {
+      float: right;
+      vertical-align: top;
+      background: #e77b2f;
+      padding: 10px;
+      border-radius: 5px;
+      margin-top: 10px;
+      color: #FFF; }
+
+.o-optional-menu {
+  position: absolute;
+  background: white;
+  padding: 15px;
+  z-index: 1;
+  width: 250px;
+  top: 1px;
+  right: 2%; }
+  .o-optional-menu .c-optional-menu-inner ul li {
+    font-size: 0.8em;
+    color: #CCC;
+    list-style-type: disc;
+    margin-left: 15px; }
+  @media screen and (max-width: 768px) {
+    .o-optional-menu {
+      display: none; } }
+
+.carousel-control {
+  width: auto; }
+  .carousel-control.left, .carousel-control.right {
+    background-image: none; }
+
+.left {
+  left: 2%; }
+
+.carousel-control.right {
+  right: 2%; }
+.carousel-control:hover {
+  cursor: pointer;
+  opacity: 1; }
+
+.carousel-control {
+  display: none; }
+  @media screen and (max-width: 768px) {
+    .carousel-control {
+      display: block; } }
+
+.carousel:hover .carousel-control {
+  display: block; }
+.carousel:hover .carousel-indicators {
+  display: block; }
+  @media screen and (max-width: 570px) {
+    .carousel:hover .carousel-indicators {
+      display: none; } }
+.carousel:hover .carousel-indicators.myTab {
+  display: none; }
+  @media screen and (max-width: 570px) {
+    .carousel:hover .carousel-indicators.myTab {
+      display: block; } }
+
+.carousel-indicators .active {
+  background-color: #00a1de; }
+
+.carousel-indicators {
+  display: none;
+  float: right;
+  bottom: 10px;
+  left: 92%; }
+  @media screen and (max-width: 570px) {
+    .carousel-indicators {
+      display: none;
+      left: 50%; } }
+  @media screen and (max-width: 768px) {
+    .carousel-indicators {
+      display: block; } }
+  @media screen and (max-width: 570px) {
+    .carousel-indicators.myTab {
+      display: block; } }
+
+/*# sourceMappingURL=styles.css.map */

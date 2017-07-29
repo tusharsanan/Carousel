@@ -1,0 +1,78 @@
+@import "./assets/scss/helpers/variables";
+@import "./assets/scss/generics/generics";
+@import "./assets/scss/helpers/partials";
+@import "./assets/scss/layout/header";
+@import "./assets/scss/layout/planAndBook";
+
+.carousel-control {
+    width: auto;
+    &.left, &.right {
+        background-image: $display-none; 
+    }
+  }
+
+  .left {
+      left: 2%;
+  }
+
+.carousel-control {
+  &.right {
+      right: 2%;
+    }
+    &:hover {
+        cursor: pointer;
+        opacity: 1;
+    }
+  }
+
+.carousel-control {
+    display: $display-none; 
+    @media screen and (max-width: $break-small) {
+		display: $display-block;
+	}
+  }
+
+  .carousel {
+    
+      &:hover {
+          .carousel-control {
+              display: $display-block;
+          }
+          .carousel-indicators {
+              display: $display-block;
+              @media screen and (max-width: $break-mobile) {
+                display: none;
+            }
+          }
+          .carousel-indicators.myTab {
+              display: none;
+              @media screen and (max-width: $break-mobile) {
+                display: block;
+            }
+          }
+      }
+  }
+
+.carousel-indicators .active {
+    background-color: $base-color;
+}
+
+  .carousel-indicators {
+      display: $display-none;
+       @media screen and (max-width: $break-mobile) {
+		    display: $display-none;
+            left: 50%;
+	    }
+        @media screen and (max-width: $break-small) {
+		    display: $display-block;
+	    }
+      float: right;
+      bottom: 10px;
+      left: 92%;
+      &.myTab {
+        @media screen and (max-width: $break-mobile) {
+            display: block;
+        }
+      }
+  }
+

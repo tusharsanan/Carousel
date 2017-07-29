@@ -1,0 +1,143 @@
+
+  header {
+	z-index: 99;
+	width: 100%;
+	background: $primary-background-color;
+	.t-header--closeLink {
+		@media screen and (max-width:$break-small) {
+			display: none;
+		} 
+		padding: 10px;
+		background: $primary-background-color;
+		display: inline-block;
+		width: 4%;
+		position: absolute;
+		left: 4%;
+		img {
+			width: 45px;
+			height: 45px;
+		}
+	}
+	@media screen and (max-width:$break-small) {
+		top: 53px;
+	}
+}
+
+.c-header__wrapper {
+	@media screen and (max-width: $break-small) {
+		border-bottom: $base-color;
+    	border-top: $base-color;
+	}
+	overflow: hidden;
+	padding: $gutter-large;
+	.c-header__firstRow {
+		padding-bottom: 5px;
+		margin-bottom: 10px;
+		border-bottom: $underline-headerLink-color;
+		overflow: hidden;
+		.t-header__logos {
+			@media screen and (max-width: $break-mobile) {
+				float: none;
+			}
+			float: left;
+			.t-header--logo {
+				display: $inline-block;
+				margin-right: 5px;
+				img {
+					width: 72px;
+					height: 50px;
+				}
+			}
+			.t-header--text {
+				display: $inline-block;
+				position: relative;
+				bottom: 7px;
+				img {
+					width: 121px;
+					height: 15px;
+				}
+			}
+			.t-header--teamText {
+				display: $inline-block;
+				position: relative;
+				bottom: 7px;
+				img {
+					width: 31px;
+					height: 31px;
+				}
+			}
+		}
+		.c-header_firstRowLinks {
+			@media screen and (max-width: $break-mobile) {
+		    	float: left;
+		    }
+			float: right;
+			ul {
+				overflow: hidden;
+				margin-top: 10px;
+				li{
+					a {
+						font-size: $small-font;
+					}
+					&:last-child {
+						border-right: none;
+						margin-right: 0;
+						padding-right: 0;
+					}
+					&:first-child {
+						padding-right: 10px;
+					}
+					
+					@extend %left-aligned-list-items;
+					border-right: 1px solid $base-color;
+					padding-right: 15px;
+					display: inline-block;
+					line-height: $base-line-height;
+					ul {
+						margin-top: 0;
+						li {
+							&:first-child{
+								padding-right: 0;
+							}
+							padding-right: 0;
+							border-right: 0;
+							margin-right: 5px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.c-header__nav {
+		overflow: hidden;
+		.t-header--links {
+			overflow: hidden;
+			float: left;
+			ul {
+				li {
+					@extend %left-aligned-list-items;
+					padding: 5px;
+					a {
+						font-size: $small-font;
+					}
+				}
+			}
+		}
+	}
+	.u-search__bar {
+		@media screen and (max-width: $break-small) {
+	    	float: left;
+	    }
+		overflow: hidden;
+		position: relative;
+		float: right;
+			input {
+				color: $ghost-text;
+			}
+			img {
+			    right: 5px;
+			    position: absolute;
+			    top: 5px;
+			}
+	}
+}

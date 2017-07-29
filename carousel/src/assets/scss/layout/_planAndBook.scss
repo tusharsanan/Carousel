@@ -1,0 +1,82 @@
+.o-plan-and-book-module {
+    @media screen and (max-width:$break-small) {
+		display: none;
+	}
+    border: 1px solid #EFEFEF;
+    width: $plan-module-width;
+    position: absolute;
+    top: 25%;
+    z-index: 1;
+    background: $primary-background-color;
+    left: 5%;
+    .c-plan-and-book-module__inner {
+        padding: 15px;
+        overflow: hidden;
+        .c-plan-and-book__selections {
+            label {
+                width: 85%;
+                margin-right: 30px;
+                margin-bottom: 11px;
+                display: inline-block;
+                white-space: nowrap;
+                input {
+                    background-color: #FFF;
+                    font-weight: normal;
+                    background-repeat: no-repeat;
+                    width: $search-box-width;
+                    display: inline-block;
+                    background-image: url('./assets/images/small-flight.gif');
+                    background-position: 8px center;
+                    padding: 5px 5px 5px 40px;
+                    &.no-image {
+                        background-image: none;
+                        padding-left: 5px;
+                    }
+                }
+                 span {
+                    display: inline-block;
+                    width: 30%;
+                    padding-right: 10px;
+                    margin-top: 10px;
+                    line-height: 100%;
+                    font-weight: bold;
+                    color: #005b82;
+                }
+            }
+        }
+         .c-search-module {
+                .t-search--button {
+                    float: right;
+                    vertical-align: top;
+                    background: #e77b2f;
+                    padding: 10px;
+                    border-radius: 5px;
+                    margin-top: 10px;
+                    color: #FFF;
+            }
+        }
+    }
+}
+
+.o-optional-menu {
+    position: absolute;
+    background: $primary-background-color;
+    padding: 15px;
+    z-index: 1;
+    width: 250px;
+    top: 1px;
+    right: 2%;
+    .c-optional-menu-inner {
+        ul {
+            li {
+                font-size: 0.8em;
+                color: $grey-font-color;
+                list-style-type: disc;
+                margin-left: 15px;
+            }
+        }
+    }
+     @media screen and (max-width: $break-small) {
+		    display: none;
+	    }
+}
