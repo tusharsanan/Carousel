@@ -16,3 +16,4 @@ describe('Component: CarouselComponent', () => {
         expect(component).toBeDefined();
     });
 });
+
